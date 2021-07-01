@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/537f71dfa1.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <div class="wrapper">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    
+     
+      <div class="col-sm-2 d-flex px-2">
+      <a class="navbar-brand" href="#"><span class='code text-capitalize'>Code</span><span class='it'>IT</span> <p class='store'>store</p></a>
+      </div>
+      <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-8">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active hover" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hover" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             All brands
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item hover px-1 for xs" href="#">Action</a></li>
+              <li><a class="dropdown-item hover px-1 for xs" href="#">Another action</a></li>
+              <li><a class="dropdown-item hover px-1 for xs" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover" href="#">Latest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover" href="#">Featured</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover" href="#">About</a>
+          </li>
+          <li class="nav-item hover">
+            <a class="nav-link hover" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover" href="#">Contact</a>
+          </li>
+          <li class="nav-item d-flex align-items-center search mx-2 py-2 hover">
+          
+          <i class="fas fa-search"></i>
+ 
+          </li>
+        
+        </ul>
+      </div>
+     
+    </div>
+   
+    <div class="col-2 my-4 for xs">
+      <div class='bag d-flex align-items-center justify-content-evenly position-relative'>
+        <i class="fas fa-shopping-bag orange"></i>
+        <p class='price pt-3'>$ 460.00</p>
+       
+       
+    </div>
+    </div>
+ 
+
+ 
+
+  </nav>
+</div>
+
+<div class="container-fluid wish d-flex align-items-center">
+  <div class="wrapper">
+    <div class="text_content  d-flex flex-column flex-md-row justify-content-between align-items-center">
+   <p class='wish_text_main'>My wishlist</p>
+   <div class="right_text d-flex">
+   <p class='mx-1'>Home </p>
+   <span>></span>
+   <p class='mx-1'> My wishlist</p>
+  </div>
+  </div>
+  </div>
+  
+</div>
+
+
+<div class="wrapper d-flex justify-content-end py-5">
+  <div class="col-2">
+  <input class="form-control me-2"  id='search' type="search" placeholder="Search" aria-label="Search">
+  </div>
+  <button type="button" id='btn' disabled class="btn btn-outline-dark mx-3 shadow-none">Clear list</button>
+</div>
+
+
+<div class="wrapper">
+  <div class="main d-flex flex-wrap">
+  <div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card" style="width: 16.5rem;">
+    <div  class='text-center py-4'>
+    <img src="img/phone_one.png"style="width: 6.25rem;" class="card-img-top" alt="phone">
+    <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+  </div>
+    <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Huawei Mate S
+      </p>
+      <p class="card-text price">$280.00</p>
+   
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card"  style="width: 16.5rem;">
+    <div class='text-center  py-4'>
+    <img src="img/phone_one.png" style="width: 6.25rem;" class="card-img-top" alt="phone">
+    <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+    </div>
+    <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Sony Xperia Z5 </p>
+      <p class="card-text price">$550.00</p>
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card" style="width: 16.5rem;">
+    <div class='text-center  py-4'>
+    <img src="img/phone_one.png" style="width: 6.25rem;" class="card-img-top" alt="phone">
+    <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+    </div>
+    <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Xiaomi Mi 4I</p>
+      <p class="card-text price">$350.00</p>
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center  ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+</div>
+</div>
+<div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card" style="width: 16.5rem;">
+    
+    <div class='text-center  py-4'>
+    
+      <img src="img/phone_one.png" style="width: 6.25rem;" class="card-img-top" alt="phone">
+      <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+    </div>
+      <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Huawei G8 4G</p>
+      <p class="card-text price">$350.00</p>
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center  ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  
+</div>
+</div>
+</div>
+<div class="main d-flex my-5 flex-wrap">
+  <div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card" style="width: 16.5rem;">
+    <div class='text-center   py-4'>
+    <img src="img/phone_one.png"style="width: 6.25rem;" class="card-img-top" alt="phone">
+    <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+  </div>
+    <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Iphone Rose Gold</p>
+      <div class="d-flex justify-content-evenly">
+      <p class="card-text price">$280.00</p>
+      <p class='text-muted text-decoration-line-through'>$649.00</p>
+    </div>
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center pb-0  ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card" style="width: 16.5rem;">
+    <div class='text-center   py-4'>
+    <img src="img/phone_one.png" style="width: 6.25rem;" class="card-img-top" alt="phone">
+    <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+    </div>
+    <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Huawei G8 4G</p>
+      <p class="card-text price">$350.00</p>
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center  ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card" style="width: 16.5rem;">
+    
+    <div class='text-center  py-4'>
+    <img src="img/phone_one.png" style="width: 6.25rem;" class="card-img-top" alt="phone">
+    <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+    </div>
+ 
+    <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Galaxy Core Prime</p>
+      <p class="card-text price">$399.00</p>
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center  ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+</div>
+</div>
+<div class="col-6 col-md-3 px-4 px-md-0">
+  <div class="card" style="width: 16.5rem;">
+    
+    <div class='text-center  py-4'>
+    
+      <img src="img/phone_one.png" style="width: 6.25rem;" class="card-img-top" alt="phone">
+      <div class="hidden_block text-center px-2 py-2"><span class='remove'>Remove from list</span></div>
+    </div>
+      <div class="card-body text-center d-flex flex-column justify-content-between ">
+      <p class="card-title position-relative">Apple Iphone 6S</p>
+      <p class="card-text price">$550.00</p>
+    </div>
+  
+    <div class="card-body icons d-flex justify-content-center  ">
+      <a href="#" class="card-link border px-2"><i class="fas fa-trash-alt"></i></a>
+      <a href="#" class="card-link border px-2 mx-0"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

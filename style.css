@@ -1,0 +1,240 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+
+.code{
+  color:#e35050;
+  font-size: 26px;
+
+
+}
+.it{
+  font-size: 26px;
+}
+
+
+a {
+  color:#000 !important;
+}
+
+
+.bag {
+  border:2px solid #000;
+ cursor: pointer;
+
+}
+
+.bag:after {
+  content: '2';
+  color:#fff;
+  text-align: center;
+  width:23px;
+  height:23px;
+  position: absolute;
+
+  right:-12px;
+border:1px solid #000;
+background: #000;
+  border-radius: 50%;
+}
+ 
+
+
+
+
+.search {
+ 
+  cursor: pointer;
+}
+
+
+
+.store {
+  font-size: 12px;
+letter-spacing: 9px;
+color: #444444;
+font-weight: 400;
+font-family: "Montserrat";
+}
+
+
+
+
+.wrapper {
+  width:1140px;
+  margin:0 auto;
+}
+
+
+
+.orange {
+  color:#e35050;
+}
+
+.hover {
+  position: relative;
+}
+.hover:hover {
+  color:#e35050 !important;
+ 
+}
+
+
+.hover:hover:before {
+  content:'';
+  border-bottom:2px solid #e35050;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+
+  
+  width: 10px;
+  height: 4px;
+
+ 
+ 
+
+}
+
+
+.navbar {
+  justify-content: start;
+}
+
+.nav-item {
+  font-size:13px;
+}
+
+
+.dropdown-menu {
+  font-size:13px;
+}
+
+
+.wish {
+  background: url(img/background.png)no-repeat;
+  background-size: 100%;
+  height:153px;
+
+ 
+}
+
+
+.wish_text_main{
+  font-size: 26px;
+  color: #222222;
+font-weight: 700;
+}
+
+
+
+.right_text {
+ 
+  font-size: 12px;
+color: #444444;
+font-weight: 400;
+
+
+
+}
+
+
+.form-control:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
+
+
+  
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+
+
+
+.card-title:before {
+  content:'';
+  border-top:2px solid #e35050;
+  position: absolute;
+  top: -75%;
+  left: 50%;
+
+  
+  width: 10px;
+  height: 4px;
+}
+
+
+
+
+.price {
+  font-size:16px;
+  color: #e24545;
+  font-weight:700;
+}
+
+
+.card {
+  position: relative;
+}
+
+
+.card:before{
+  content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+transition: all .3s ease;
+}
+
+.card:hover:before {
+  cursor:pointer;
+  background: -webkit-linear-gradient(45deg, rgb(0, 0, 0), rgb(84, 94, 94) 93%);
+  background: -moz-linear-gradient(45deg, rgb(0, 0, 0), rgb(84, 94, 94) 93%);
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(84, 94, 94) 93%);
+ height:250px;
+ 
+ opacity:0.8;
+}
+
+.hidden_block {
+ border:2px solid #fff;
+ display: none;
+ position: absolute;
+ top:25%;
+ left:25%;
+ cursor:pointer;
+ 
+}
+
+.card:hover .hidden_block{
+
+display: block;
+	transition:all .5s ease;
+
+
+
+
+}
+
+
+.card:hover .icons a {
+  background: #E24545;
+}
+
+
+
+.remove {
+  font-size:12px;
+  color:#fff;
+
+}
