@@ -32,19 +32,22 @@ btn.onclick = (event) => {
 search.onkeyup = (event) => {
    if(search.value.length > 0) {
      btn.disabled=false
+   } else {
+     btn.disabled=true
    }
  
   let filter = search.value.toUpperCase();
-  let card = document.getElementsByClassName("card");
-  let cardBody = document.getElementsByClassName("card-body");
-  var i;
+  // let card = document.getElementsByClassName("card");
+  let cards = document.getElementsByClassName('cards')
+  // let cardBody = document.getElementsByClassName("card-body");
+  // var i;
   
-  for (i = 0; i <card.length; i++) {
-    let p = card[i].getElementsByTagName("p")[0];
+  for (i = 0; i <cards.length; i++) {
+    let p = cards[i].getElementsByTagName("p")[0];
     if (p.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      card[i].style.display = "";
+      cards[i].style.display = "";
     } else {
-      card[i].style.display = "none";
+      cards[i].style.display = "none";
     }
   }
  
@@ -52,3 +55,5 @@ search.onkeyup = (event) => {
 
 
 
+
+// let page = document.getElementsByClassName('')

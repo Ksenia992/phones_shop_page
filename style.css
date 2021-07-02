@@ -156,7 +156,10 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
 
-
+.card-title {
+  font-size: 14px;
+color: #222222;
+}
 
 .card-title:before {
   content:'';
@@ -236,5 +239,32 @@ display: block;
 .remove {
   font-size:12px;
   color:#fff;
+
+}
+
+.page-item a {
+  font-size: 12px;
+  color: #888888 !important;
+  font-weight: 400;
+}
+/* .page-item a :active {
+  background-color: rgba(246,246,248,0) !important;
+  border: 2px solid #444444 !important; 
+color: #e24545 !important;
+
+} */
+
+.page-link {
+
+background-color: rgba(246,246,248,0);
+border: 2px solid #dddddd;
+}
+
+.page-link:focus {
+  box-shadow: none;
+ 
+  background-color: rgba(246,246,248,0) ;
+  border: 2px solid #444444; 
+color: #e24545 !important;
 
 }
