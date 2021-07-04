@@ -1,12 +1,14 @@
 * {
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
+  list-style: none;
 }
 
 
 .code{
   color:#e35050;
   font-size: 26px;
+  
 
 
 }
@@ -200,7 +202,7 @@ transition: all .3s ease;
 }
 
 .card:hover:before {
-  cursor:pointer;
+
   background: -webkit-linear-gradient(45deg, rgb(0, 0, 0), rgb(84, 94, 94) 93%);
   background: -moz-linear-gradient(45deg, rgb(0, 0, 0), rgb(84, 94, 94) 93%);
   background: linear-gradient(45deg, rgb(0, 0, 0), rgb(84, 94, 94) 93%);
@@ -230,7 +232,7 @@ display: block;
 }
 
 
-.card:hover .icons a {
+.card:hover .icons button {
   background: #E24545;
 }
 
@@ -239,6 +241,9 @@ display: block;
 .remove {
   font-size:12px;
   color:#fff;
+  border:none;
+  background: transparent;
+
 
 }
 
@@ -268,3 +273,146 @@ border: 2px solid #dddddd;
 color: #e24545 !important;
 
 }
+
+.full {
+  font-size: 16px;
+color: #222222;
+font-weight: 700;
+}
+
+
+.read_about {
+  font-size: 12px;
+letter-spacing: 0px;
+color: #444444;
+font-weight: 400;
+position: relative;
+
+}
+
+
+.carousel_icon {
+  font-size: 32px;
+color: #444444;
+}
+
+
+.carousel {
+  padding-top:94px;
+ 
+}
+
+
+.carousel-inner {
+  border-left: 2px solid #444444;
+  border-right: 2px solid #444444;
+  border-bottom: 2px solid #444444;
+  background: linear-gradient(#444444, #444444), linear-gradient(#444444, #444444);
+  background-size: 30px 2px, 30px 2px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right top;
+  height:120px;
+ 
+}
+
+
+
+.read_about:after {
+  content: '';
+  width:10px;
+  height:2px;
+  background:#CCCCCC;
+  position: absolute;
+  left:0;
+  bottom:0;
+}
+
+
+
+.footer {
+  padding-top:80px;
+ 
+}
+.footer_fluid {
+   border-top:3px solid  #dddddd;
+   margin-top:100px;
+   background-color: #f6f6f6;
+}
+
+
+
+
+
+.subscribe {
+  font-size: 14px;
+color: #444444;
+font-weight: 400;
+}
+
+
+.email {
+  position: relative;
+
+}
+
+#email {
+  height: 48px;
+}
+
+.email:after {
+  content:'\f0e0';
+  font-family: "Font Awesome 5 Free";
+  font-size:16px;
+  position: absolute;
+  
+color: #999999;
+  top:12px;
+  right:19px;
+  width:17px;
+  height:13px;
+}
+
+
+
+::-webkit-input-placeholder {font-size: 11px;
+  line-height: 22px;
+  color: #888888 !important;
+  font-weight: 400;}
+::-moz-placeholder         {font-size: 11px;
+  line-height: 22px;
+  color: #888888 !important;
+  font-weight: 400;}
+:-moz-placeholder         {font-size: 11px;
+  line-height: 22px;
+  color: #888888 !important;
+  font-weight: 400;}
+:-ms-input-placeholder      {font-size: 11px;
+  line-height: 22px;
+  color: #888888 !important;
+  font-weight: 400;}
+
+
+
+  .footer_icons i {
+     border:1px solid #cccccc;
+     font-size: 14px;
+letter-spacing: 1px;
+color: #999999;
+padding:14px;
+  }
+
+
+  .footer_icons a :hover {
+    background-color: #e24545;
+    color:#fff;
+  }
+
+
+
+  .invalid{
+    color:#f00;
+    display: none;
+    text-transform: capitalize !important;
+    padding-top:5px;
+    text-align: center;
+  }
