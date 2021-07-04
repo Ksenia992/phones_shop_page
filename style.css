@@ -5,6 +5,8 @@
 }
 
 
+
+
 .code{
   color:#e35050;
   font-size: 26px;
@@ -238,6 +240,11 @@ display: block;
 
 
 
+
+
+
+
+
 .remove {
   font-size:12px;
   color:#fff;
@@ -415,4 +422,67 @@ padding:14px;
     text-transform: capitalize !important;
     padding-top:5px;
     text-align: center;
+  }
+
+  .copyright {
+    font-size: 11px;
+color: #888888;
+font-weight: 400;
+  }
+
+  .copyright span {
+    font-weight: 700;
+    font-family: 'Montserrat';
+   
+  }
+
+
+  
+.electron {
+  background: url(icons/card1.png) no-repeat;
+  width:47px;
+  height: 28px;
+}
+
+
+.paypal {
+  background: url(icons/card2.png) no-repeat;
+  width:47px;
+  height: 28px;
+}
+
+
+.visa {
+  background: url(icons/card3.png) no-repeat;
+  width:47px;
+  height: 28px;
+}
+.master {
+  background: url(icons/card4.png) no-repeat;
+  width:47px;
+  height: 28px;
+}
+
+.maestro {
+  background: url(icons/card5.png) no-repeat;
+  width:47px;
+  height: 28px;
+}
+
+.discover {
+  background: url(icons/card6.png) no-repeat;
+  width:47px;
+  height: 28px;
+}
+
+
+
+ 
+ 
+  .bottom_fluid {
+    background-color: #e6e6e6;
+  }
+    
+  .bottom_part {
+    height:92px;
   }
