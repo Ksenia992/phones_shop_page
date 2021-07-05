@@ -20,9 +20,56 @@ btn.onclick = (event) => {
  
 }
 
+// document.getElementById('pag_link').onclick = () => {
+  
+//   let cards = document.getElementsByClassName('cards')
+//   for (i = 0; i <cards.length; i++) {
+ 
+//       cards[i].style.display = "flex";
+    
+   
+//   }
+
+// }
 
 
 
+
+let pag_links = document.getElementsByClassName('page-item')
+
+for (i = 0; i <pag_links.length; i++) {
+
+    pag_links[i].onclick = () => {
+  
+        let cards = document.getElementsByClassName('cards')
+        for (i = 0; i <cards.length; i++) {
+       
+            cards[i].style.display = "flex";
+            search.value = "";
+            btn.disabled=true
+          
+         
+        }
+      
+      }
+  
+ 
+}
+
+
+
+
+// document.getElementsByClassName('page-item').onclick = () => {
+  
+//   let cards = document.getElementsByClassName('cards')
+//   for (i = 0; i <cards.length; i++) {
+ 
+//       cards[i].style.display = "flex";
+    
+   
+//   }
+
+// }
 
 
 
@@ -49,10 +96,25 @@ search.onkeyup = (event) => {
     } else {
       cards[i].style.display = "none";
     }
+   
   }
+
+  
  
 }
 
+
+
+
+// let refresh= (e) => {
+//  e.preventDefault()
+//  document.addEventListener('DOMContentLoaded', function sample() {
+  
+//     let cards = document.getElementsByClassName('cards')
+   
+//     cards.style.display = "flex"
+//   })
+// }
 
 
 let remove = document.getElementById('rm')
@@ -145,7 +207,7 @@ function change_style(event) {
     document.getElementById('email').style.color = '#f00';
     document.getElementsByClassName('invalid')[0].style.display='block'
   }
- 
+  
     
   return false;
 }

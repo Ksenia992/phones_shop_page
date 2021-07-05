@@ -10,9 +10,20 @@
 .code{
   color:#e35050;
   font-size: 26px;
-  
+  position: relative;
 
 
+}
+
+
+.code:before {
+  content: '';
+  position: absolute;
+  bottom:0;
+  left:0;
+  border-bottom: 2px solid #E24545;
+  width:10px;
+  height:4px;
 }
 .it{
   font-size: 26px;
@@ -45,7 +56,9 @@ background: #000;
 }
  
 
-
+.bag i {
+  color:#E24545
+}
 
 
 .search {
@@ -485,4 +498,28 @@ font-weight: 400;
     
   .bottom_part {
     height:92px;
+  }
+
+
+  .transform {
+    transform: rotateY(180deg)
+  }
+/* 
+  img{
+    min-height: 180px;
+    max-height: 190px;
+   
+   
+  } */
+
+  .card-img-top {
+  
+    object-fit: none;
+    object-position: top;
+  }
+
+
+  .card_image {
+    height:250px;
+    overflow: hidden;
   }
