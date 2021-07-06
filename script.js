@@ -81,7 +81,13 @@ search.onkeyup = (event) => {
   
   for (i = 0; i <cards.length; i++) {
     let p = cards[i].getElementsByTagName("p")[0];
+    let price = cards[i].getElementsByTagName("p")[1]
     if (p.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+    if (price.innerHTML.toUpperCase().indexOf(filter) > -1) {
       cards[i].style.display = "";
     } else {
       cards[i].style.display = "none";
