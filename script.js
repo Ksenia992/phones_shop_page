@@ -14,23 +14,21 @@ let search = document.getElementById('search')
 
 
 
-btn.onclick = (event) => {
+btn.onclick = () => {
  search.value = "";
  btn.disabled=true
+ let cards = document.getElementsByClassName('cards')
+ for (i = 0; i <cards.length; i++) {
+       
+  cards[i].style.display = "flex";
+
  
+
+
+}
 }
 
-// document.getElementById('pag_link').onclick = () => {
-  
-//   let cards = document.getElementsByClassName('cards')
-//   for (i = 0; i <cards.length; i++) {
- 
-//       cards[i].style.display = "flex";
-    
-   
-//   }
 
-// }
 
 
 
@@ -42,11 +40,16 @@ for (i = 0; i <pag_links.length; i++) {
     pag_links[i].onclick = () => {
   
         let cards = document.getElementsByClassName('cards')
+       
         for (i = 0; i <cards.length; i++) {
        
             cards[i].style.display = "flex";
+         
             search.value = "";
             btn.disabled=true
+
+
+      
           
          
         }
@@ -58,18 +61,6 @@ for (i = 0; i <pag_links.length; i++) {
 
 
 
-
-// document.getElementsByClassName('page-item').onclick = () => {
-  
-//   let cards = document.getElementsByClassName('cards')
-//   for (i = 0; i <cards.length; i++) {
- 
-//       cards[i].style.display = "flex";
-    
-   
-//   }
-
-// }
 
 
 
@@ -84,10 +75,9 @@ search.onkeyup = (event) => {
    }
  
   let filter = search.value.toUpperCase();
-  // let card = document.getElementsByClassName("card");
+  
   let cards = document.getElementsByClassName('cards')
-  // let cardBody = document.getElementsByClassName("card-body");
-  // var i;
+
   
   for (i = 0; i <cards.length; i++) {
     let p = cards[i].getElementsByTagName("p")[0];
@@ -106,41 +96,24 @@ search.onkeyup = (event) => {
 
 
 
-// let refresh= (e) => {
-//  e.preventDefault()
-//  document.addEventListener('DOMContentLoaded', function sample() {
-  
-//     let cards = document.getElementsByClassName('cards')
-   
-//     cards.style.display = "flex"
-//   })
-// }
+
 
 
 let remove = document.getElementById('rm')
 let card = document.getElementById('card')
 let del = document.getElementsByClassName('delete')
 
-// remove.addEventListener('click', function(event) {
- 
-// 	// var target = event.target;
-//   // console.log(target)
-//   // console.log(this.remove())
-// 	// console.log(target.tagName); //выведет 'p' - абзац
-//   console.log(this.parentNode)
-//   // this.parentNode.parentNode.removeChild(this.parentNode)
-//   del.remove()
-
-// });
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
   var buttons_collection = document.getElementsByClassName('del');
-  for(var i=0; i<buttons_collection.length; i++)
-{
-  buttons_collection[i].addEventListener('click', function(event) {
-    // var cards_collection = document.getElementsByClassName('card');
+ 
+  for (var i = 0; i < buttons_collection.length; i++) {
+
+  buttons_collection[i].addEventListener('click', function() {
+  
+
     this.parentNode.parentNode.removeChild(this.parentNode)
   })
   
@@ -157,34 +130,14 @@ function deleting() {
 }
 }
 
-// card.forEach(function(item) {
-//     item.addEventListener("click", function(){
-//         item.parentNode.parentNode.removeChild(item.parentNode);
-//     });
-// });
 
 
 
 
 
 
-// let page = document.getElementsByClassName('')
 
 
-
-// let check = (event) => {
-//   const pattern =
-//   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+(?:com|net)))$/;
-// return pattern.test(event.target.value) || "Invalid e-mail.";
-  
-// }
-
-// function check(email) {
-//   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//   return re.test(String(email).toLowerCase());
- 
-// }
-// return typeof input.checkValidity === 'function' ? input.checkValidity() : /\S+@\S+\.\S+/.test(value)
 
 
 let input = document.getElementById('email');
