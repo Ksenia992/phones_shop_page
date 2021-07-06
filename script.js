@@ -100,8 +100,19 @@ search.onkeyup = (event) => {
 
 
 let remove = document.getElementById('rm')
-let card = document.getElementById('card')
+let card = document.getElementsByClassName('card')
+
 let del = document.getElementsByClassName('delete')
+
+
+
+
+
+
+
+
+
+
 
 
 
