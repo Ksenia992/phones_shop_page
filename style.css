@@ -91,8 +91,6 @@ a {
   height: 4px;
 }
 
-
-
 .navbar {
   justify-content: start;
 }
@@ -321,13 +319,12 @@ color: #e24545 !important;
   height: 48px;
 }
 
-
 .email:after {
   content: "\f0e0";
   font-family: "Font Awesome 5 Free";
   font-size: 16px;
   position: absolute;
-   font-weight: 400;
+  font-weight: 400;
   color: #999999;
   top: 12px;
   right: 19px;

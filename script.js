@@ -1,9 +1,7 @@
 let btn = document.getElementById("btn");
 let search = document.getElementById("search");
 
-
-
-            // Clear list button
+// Clear list button
 
 btn.onclick = () => {
   search.value = "";
@@ -14,7 +12,7 @@ btn.onclick = () => {
   }
 };
 
-            // Pagination items
+// Pagination items
 
 let pag_links = document.getElementsByClassName("page-item");
 
@@ -30,9 +28,7 @@ for (i = 0; i < pag_links.length; i++) {
   };
 }
 
-
-
-            // Filter
+// Filter
 
 search.onkeyup = (event) => {
   if (search.value.length > 0) {
@@ -59,10 +55,7 @@ search.onkeyup = (event) => {
   }
 };
 
-
-
-            // Remove
-
+// Remove
 
 let card = document.getElementsByClassName("card");
 
@@ -85,9 +78,7 @@ function deleting() {
   }
 }
 
-
-
-            // Validation email
+// Validation email
 
 let input = document.getElementById("email");
 
